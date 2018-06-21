@@ -1,42 +1,25 @@
-# ------------------------------------------------------------------
-# Solução 1
-# ------------------------------------------------------------------
+# -----------------------------------------------------------------------------------------
+#
+#       Solução Problema 2:
+#
+# Escreva um programa curto que imprima cada número de 1 a 100 em uma nova linha.
+# Para cada múltiplo de 3, imprima "Hello" em vez do número.
+# Para cada múltiplo de 7, imprima "World" em vez do número.
+# Para números que são múltiplos de 3 e 7, imprima "HelloWorld" em vez do número.
+#
+# ------------------------------------------------------------------------------------------
 
-def main():
-    '''
-    Programe que lê um inteiro positivo n e imprime os n
-    primeiros inteiros positivos.
+for n in range(1, 101):
+    if n % 3 == 0 and n % 7 == 0:
+        print("Hello World")
+    elif n % 3 == 0:
+        print("Hello")
+    elif n % 7 == 0:
+        print("World")
+    else:
+        print('{} '. format(n))
 
-    Exemplo de execução:
 
-    Digite o valor de n: 3
-    1
-    3
-    5
-    >>>
-    '''
-
-    print("Gerador do n primeiros números ímpares positivos\n")
-
-    # leia o valor de n
-    n = int(input("Digite o valor de n: "))
-
-    # contador de ímpares impressos
-    i = 0
-
-    # primeiro número ímpar
-    ímpar = 1
-
-    # imprima os n primeiros impares, um por linha
-    while i < n:
-        # imprima o próximo número ímpar
-        print(ímpar)
-
-        # incremente p contador
-        i = i + 1
-
-        # determine o próximo ímpar
-        ímpar = ímpar + 2
 
 
 
